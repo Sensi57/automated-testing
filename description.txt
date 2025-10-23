@@ -1,0 +1,44 @@
+Test Automation Homework — Description of Test Cases
+
+Website used: https://www.demoblaze.com/
+
+Tools:
+- Robot Framework
+- SeleniumLibrary
+- Google Chrome + ChromeDriver
+- VSCode + venv
+
+Test Cases:
+
+1. Sign Up
+   Steps:
+   - Открыть сайт https://www.demoblaze.com/
+   - Нажать на кнопку "Sign up"
+   - Ввести имя пользователя (например, testuser123)
+   - Ввести пароль (например, testpass123)
+   - Нажать кнопку подтверждения регистрации
+   - Проверить, что регистрация выполнена (ожидаем всплывающее окно или сообщение)
+
+2. Log In
+   Steps:
+   - Открыть сайт https://www.demoblaze.com/
+   - Нажать на кнопку "Log in"
+   - Ввести имя пользователя (тот же, что при регистрации)
+   - Ввести пароль
+   - Нажать кнопку "Log in"
+   - Проверить, что вход выполнен успешно (появляется кнопка "Log out")
+
+3. Log Out
+   Steps:
+   - Войти в аккаунт (как в предыдущем тесте)
+   - Нажать на кнопку "Log out"
+   - Проверить, что пользователь вышел (кнопка "Log in" снова появилась)
+
+4. Buy Product
+   Steps:
+   - Открыть сайт https://www.demoblaze.com/
+   - Выбрать продукт (например, Samsung galaxy s6)
+   - Перейти на страницу товара
+   - Нажать "Add to cart"
+   - Подтвердить действие во всплывающем окне (alert)
+   - Проверить, что товар добавлен в корзину
